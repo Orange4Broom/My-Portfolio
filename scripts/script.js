@@ -10,7 +10,7 @@ document.addEventListener('scroll', () => {
 const showButton = document.querySelector('#menuButton');
 const homeButton = document.querySelector('#homeButton');
 const aboutButton = document.querySelector('#aboutButton');
-const contactButton = document.querySelector('#contactButton');
+const contactButton = document.querySelector('#socialButton');
 const menu = document.querySelector('#menu');
 menu.classList.add('hide');
 let click = 0;
