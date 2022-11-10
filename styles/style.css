@@ -199,7 +199,7 @@ section {
 
 .links:hover {
     scale: 110%;
-    transition: 0.4s;
+    transition: 0.2s;
 
     color:#A7233A;
 }
