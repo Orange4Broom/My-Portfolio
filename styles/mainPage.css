@@ -64,7 +64,7 @@ section {
     
     top: 0;
     left: 0;
-    min-width: 600px;
+    min-width: 650px;
 
     height: 80px;
     width: 100%;
@@ -109,7 +109,7 @@ section {
 }
 
 #menu a {
-    font-size: 18px;
+    font-size: 22px;
     color: rgb(215, 215, 215);
     text-decoration: none;
 }
@@ -147,6 +147,18 @@ section {
     background: none;
 }
 
+#nextPageInfo {
+    margin-top: 30px;
+    max-width: 1100px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    font-weight: 400;
+    font-size: 36px;
+
+    color: rgb(215, 215, 215);
+}
+
 #nextPage:hover {
     transition: 0.3s;
     scale: 120%;
@@ -167,6 +179,30 @@ section {
     align-items: center;
 
     min-height: 750px;
+}
+
+#nextButton {
+    margin-top: 100px;
+
+    height: 60px;
+    width: 170px;
+
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 5px;
+
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+
+    transition: 0.3s;
+
+    background: none;
+}
+
+#nextButton:hover {
+    cursor: pointer;
+    color: #001220;
+    background-color: rgb(215, 215, 215);
 }
 
 /*---------Section 3---------*/
@@ -208,13 +244,24 @@ section {
     color:#661220;
 }
 
+/*---------Section 4---------*/
+
+#sec-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 750px;
+
+    overflow: hidden;
+}
 
 
 
 
 /*---------Resposive shit---------*/
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     #navigation {
         display: flex;
         flex-direction: column;
@@ -235,7 +282,7 @@ section {
 
         border: none;
 
-        font-size: 22px;
+        font-size: 28px;
         color: rgb(215, 215, 215);
 
         background: none;
@@ -245,11 +292,23 @@ section {
         margin-top: 60px;
     } 
 
+    #nextPageInfo {
+        margin-top: 30px;
+        max-width: 1100px;
+        text-align: start;
+        letter-spacing: 1px;
+    
+        font-weight: 400;
+        font-size: 30px;
+    
+        color: rgb(215, 215, 215);
+    }
+
     .hide {
         visibility: hidden;
         position: fixed;
 
-        right: -100px;
+        right: -200px;
     }
 
     #menu {
@@ -277,4 +336,6 @@ section {
     
         color:#661220;
     }
+
+    
 }
