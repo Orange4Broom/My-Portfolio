@@ -16,14 +16,14 @@
         <nav id="navigation">
             <div id="header-menu">
                 <header id="nameHeader">Jakub Trnčák</header>
-                <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+                <button id="menuButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');"><i class="fa-solid fa-bars"></i></button>
             </div>
             
-            <div id="menu">
-                <a href="../index.html#sec-1" id="homeButton">Home</a>
-                <a href="../index.html#sec-2" id="aboutButton">About me</a>
+            <div id="menu" class="menu closed">
+                <a href="../index.html#sec-1" id="homeButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');">Home</a>
+                <a href="../index.html#sec-2" id="aboutButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');">About me</a>
                 <a href="/pages/myWork.html">My work</a>
-                <a href="../index.html#sec-3" id="socialButton">Social</a>
+                <a href="../index.html#sec-3" id="socialButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');">Social</a>
             </div>
         </nav>
 

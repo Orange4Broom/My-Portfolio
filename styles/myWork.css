@@ -235,14 +235,31 @@ section {
     }
 
     #menu {
+        gap: 30px;
+    }
+
+    .menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        gap: 20px;
+        max-height: 150px;
 
         padding-bottom: 40px;
+
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    }
+
+    .menu.closed {
+        position: fixed;
+  
+        max-height: 0px;    
+        height: 0px;
+        
+        content-visibility: hidden;
     }
 
     #thirdPageInfo {
