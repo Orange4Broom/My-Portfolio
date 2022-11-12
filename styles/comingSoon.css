@@ -37,7 +37,7 @@
     overflow: hidden;
 
     background-image: url(/images/bubbles.svg);
-    background-size: cover;
+    background-size: auto;
 }
 
 section {

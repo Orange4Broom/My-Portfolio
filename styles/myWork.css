@@ -34,14 +34,12 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: auto;
-
     background-image: url(/images/bubbles.svg);
-    background-size: cover;
+    background-size: auto;
 }
 
 section {
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
@@ -49,7 +47,6 @@ section {
 
 #sec-1 {
     display: flex;
-    flex-flow: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -74,8 +71,13 @@ section {
     transition: 0.6s;
 
     color: rgb(215, 215, 215);
+    background-color: #00000097;
     cursor: default;
 
+    z-index: 1;
+}
+
+.sticky {
     background-color: #00000097;
 }
 
@@ -119,19 +121,159 @@ section {
     text-decoration: 2px underline rgb(215, 215, 215);
 }
 
-.links {
-    font-size: 82px;
-    margin-left: 10px;
+#mainPageHeader {
+    margin-top: 200px;
+    max-width: 1000px;
+
+    font-size: 72px;
+
     color: rgb(215, 215, 215);
+
 }
 
-.links:hover {
-    scale: 110%;
-    transition: 0.2s;
+#workSpace {
+    display: flex;
 
-    color:#A7233A;
+    flex-flow: wrap;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+
+    gap: 20px;
 }
 
-.links:active {
-    color:#661220;
+.card {
+    position: relative;
+    overflow: hidden;
+
+    height: 300px;
+    width: 450px;
+
+    outline: 3px solid #ebdbb2;
+    outline-offset: -8px;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #282828;
+
+    background-color: #333;
+}
+  
+.card-image {
+    position: absolute;
+
+    inset:  0;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    opacity: .6;
+
+    transition: transform .75s;
+}
+  
+.card:hover .card-image {
+    transform: scale(1.15);
+}
+  
+.card-title {
+    position: absolute;
+
+    left: 15px;
+    bottom: 1px;
+
+    font-size: 32px;
+
+    color: #f9f5d7;
+    text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+/*---------Resposive shit---------*/
+
+@media (max-width: 700px){
+
+    #navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: auto;
+        min-width: unset;
+    }
+
+    #header-menu {
+        width: 100%;
+        margin: 40px 0 40px;
+    }
+
+    #menuButton {
+        visibility: visible;
+
+        border: none;
+
+        font-size: 28px;
+        color: rgb(215, 215, 215);
+
+        background: none;
+    }
+
+    .hide {
+        visibility: hidden;
+        position: fixed;
+
+        right: -200px;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 20px;
+
+        padding-bottom: 40px;
+    }
+
+    #thirdPageInfo {
+        gap: 20px;
+    }
+
+    .links {
+        font-size: 62px;
+    }
+
+    .links:hover {
+        scale: 110%;
+        transition: 0.4s;
+    
+        color:#661220;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    #workSpace {
+        gap: 30px;
+    }
+
+    .card {
+        height: 200px;
+        width: 350px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
 }

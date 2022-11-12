@@ -5,29 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/myWork.css">
-    <title>My work</title>
+    <link rel="shortcut icon" href="/images/favicon-suitcase.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My portfolio</title>
 </head>
 <body>
-
+    
     <section id="sec-1">
+        
+        <nav id="navigation">
+            <div id="header-menu">
+                <header id="nameHeader">Jakub Trnčák</header>
+                <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            
+            <div id="menu">
+                <a href="../index.html#sec-1" id="homeButton">Home</a>
+                <a href="../index.html#sec-2" id="aboutButton">About me</a>
+                <a href="/pages/myWork.html">My work</a>
+                <a href="../index.html#sec-3" id="socialButton">Social</a>
+            </div>
+        </nav>
 
-        <section id="sec-1">
-            <nav id="navigation">
-                <div id="header-menu">
-                    <header id="nameHeader">Jakub Trnčák</header>
-                    <button id="menuButton"><i class="fa-solid fa-bars"></i></button>
-                </div>
-                
-                <div id="menu">
-                    <a href="#sec-1" id="homeButton">Home</a>
-                    <a href="#sec-2" id="aboutButton">About me</a>
-                    <a href="/pages/comingSoon.html">My work</a>
-                    <a href="../index.html#sec3" id="socialButton">Social</a>
-                </div>
-            </nav>
+        <h2 id="mainPageHeader">My work</h2>
+
+        <div id="workSpace">
+
+            <div id="about-image" class="container">
+                <a href="#">
+                    <div class="card">
+                        <img src="../images/todoapp.png" alt="code.img" class="card-image">
+                        <h3 class="card-title">To Do App</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div id="about-image" class="container">
+                <a href="#">
+                    <div class="card">
+                        <img src="../images/calculator.png" alt="code.img" class="card-image">
+                        <h3 class="card-title">Calculator</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div id="about-image" class="container">
+                <a href="#">
+                    <div class="card">
+                        <img src="../images/stopwatch.png" alt="code.img" class="card-image">
+                        <h3 class="card-title">Stopwatch</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div id="about-image" class="container">
+                <a href="#">
+                    <div class="card">
+                        <img src="../images/realtime.png" alt="code.img" class="card-image">
+                        <h3 class="card-title">Real Time Clock</h3>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
     </section>
+    
 
     <script src="../scripts/script.js"></script>
-    
 </body>
 </html>
+
