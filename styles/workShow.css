@@ -112,7 +112,9 @@ section {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  line-height: 50px;
   gap: 40px;
+  margin-top: 30px;
   height: auto;
 }
 
@@ -129,6 +131,10 @@ section {
 
 .links:active {
   color: #13864f;
+}
+
+#about-image {
+  margin-top: 40px;
 }
 
 .card {
@@ -230,6 +236,9 @@ section {
   }
 }
 @media (max-width: 550px) {
+  #mainPageHeader {
+    font-size: 66px;
+  }
   #workSpace {
     gap: 30px;
   }
