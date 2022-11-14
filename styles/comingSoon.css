@@ -1,93 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 :root {
-    font-family: 'Comfortaa', cursive;
-    scroll-behavior: smooth;
+  font-family: "Comfortaa", cursive;
+  scroll-behavior: smooth;
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #A7233A #001220;
-  }
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #A7233A #001220;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 2px;
-  }
+*::-webkit-scrollbar {
+  width: 2px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #001220;
-  }
+*::-webkit-scrollbar-track {
+  background: #001220;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #A7233A;
-    border-radius: 10px;
-    border: 3px solid none;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #A7233A;
+  border-radius: 10px;
+  border: 3px solid none;
+}
 
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-
-    background-image: url(/images/bubbles.svg);
-    background-size: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(/images/bubbles.svg);
+  background-size: auto;
 }
 
 section {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
-/*---------Section 1---------*/
-
 #sec-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 750px;
 }
 
 #comingSoonHeader {
-    margin: 80px 0 0 0;
-    max-width: 750px;
-
-    font-size: 72px;
-    width: auto;
-
-    color: rgb(215, 215, 215);
-
+  margin: 80px 0 0 0;
+  max-width: 750px;
+  font-size: 72px;
+  width: auto;
+  color: rgb(215, 215, 215);
 }
 
 #backButton {
-    margin-top: 100px;
-
-    height: 60px;
-    width: 170px;
-
-    border: 2px solid rgb(215, 215, 215);
-    border-radius: 5px;
-
-    font-size: 26px;
-    text-decoration: none;
-    color: rgb(215, 215, 215);
-
-    transition: 0.3s;
-
-    background: none;
+  margin-top: 100px;
+  height: 60px;
+  width: 170px;
+  border: 2px solid rgb(215, 215, 215);
+  border-radius: 5px;
+  font-size: 26px;
+  text-decoration: none;
+  color: rgb(215, 215, 215);
+  transition: 0.3s;
+  background: none;
 }
 
 #backButton:hover {
-    cursor: pointer;
-    color: #001220;
-    background-color: rgb(215, 215, 215);
-}
-
+  cursor: pointer;
+  color: #001220;
+  background-color: rgb(215, 215, 215);
+}/*# sourceMappingURL=comingSoon.css.map */
