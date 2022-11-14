@@ -56,7 +56,6 @@ section {
   min-width: 650px;
   height: 80px;
   width: 100%;
-  transition: 0.6s;
   color: rgb(215, 215, 215);
   cursor: default;
 }
@@ -265,11 +264,12 @@ section {
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   }
-  .menu.closed {
+  .closed {
+    visibility: hidden;
     position: fixed;
     max-height: 0px;
     height: 0px;
-    content-visibility: hidden;
+    transition: 0s;
   }
   #thirdPageInfo {
     gap: 20px;
