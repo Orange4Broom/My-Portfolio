@@ -269,7 +269,7 @@ section {
     position: fixed;
     max-height: 0px;
     height: 0px;
-    content-visibility: hidden;
+    visibility: hidden;
   }
   #thirdPageInfo {
     gap: 20px;
