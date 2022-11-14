@@ -77,10 +77,6 @@ section {
     z-index: 1;
 }
 
-.sticky {
-    background-color: #00000097;
-}
-
 #header-menu {
     display: flex;
     flex-direction: row;
@@ -260,21 +256,6 @@ section {
         height: 0px;
         
         content-visibility: hidden;
-    }
-
-    #thirdPageInfo {
-        gap: 20px;
-    }
-
-    .links {
-        font-size: 62px;
-    }
-
-    .links:hover {
-        scale: 110%;
-        transition: 0.4s;
-    
-        color:#661220;
     }
 
 }

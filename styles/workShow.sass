@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap')
+
+:root
+    font-family: 'Comfortaa', cursive
+    scroll-behavior: smooth
+
+*
+    scrollbar-width: auto
+    scrollbar-color: #A7233A #001220
+
+*::-webkit-scrollbar
+    width: 2px
+
+*::-webkit-scrollbar-track
+    background: #001220
+
+*::-webkit-scrollbar-thumb
+    background-color: #A7233A
+    border-radius: 10px
+    border: 3px solid none
+
+body
+    display: flex
+
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    margin: 0
+    padding: 0
+
+    background-image: url(/images/bubbles.svg)
+    background-size: auto
+
+section
+    height: 100vh
+    width: 100%
+
+#sec-1
+    display: flex
+
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    min-height: 750px
+
+#navigation
+    position: fixed
+
+    display: flex
+
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+
+    top: 0
+    left: 0
+
+    min-width: 650px
+
+    height: 80px
+    width: 100%
+
+    transition: 0.6s
+
+    color: rgb(215, 215, 215)
+    background-color: #00000097
+
+    cursor: default
+    z-index: 1
+
+#header-menu
+    display: flex
+
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+
+    height: auto
+
+#nameHeader
+    font-size: 24px
+    margin: 0
+
+    height: auto
+
+#menuButton
+    visibility: hidden
+
+#menu
+    display: flex
+
+    justify-content: center
+    align-items: center
+
+    gap: 50px
+    transition: 0.6s
+
+    a
+        font-size: 22px
+        color: rgb(215, 215, 215)
+        text-decoration: none
+
+    a:hover
+        text-decoration: 2px underline rgb(215, 215, 215)
+
+#mainPageHeader
+    max-width: 1000px
+
+    font-size: 72px
+
+    color: rgb(215, 215, 215)
+
+#headerBox
+    display: flex
+
+    flex-flow: wrap
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+
+    gap: 40px
+
+    height: auto
+
+.links
+    font-size: 82px
+    color: rgb(215, 215, 215)
+
+.links:hover
+    scale: 110%
+    transition: 0.4s
+
+    color: #24B670
+
+.links:active
+    color: #13864f
+
+.card
+    position: relative
+    overflow: hidden
+
+    min-height: 600px
+    min-width: 1000px
+
+    height: 600px
+    width: 1000px
+
+    outline: 3px solid #ebdbb2
+    outline-offset: -8px
+
+    border-radius: 10px
+    box-shadow: 3px 3px 10px #282828
+
+    background-color: #333
+
+    .card-image
+        position: absolute
+
+        inset: 0
+
+        height: 100%
+        width: 100%
+
+        object-fit: cover
+        opacity: .6
+
+        transition: transform .75s
+
+    .card-title
+        position: absolute
+
+        left: 15px
+        bottom: 1px
+
+        font-size: 42px
+
+        color: #f9f5d7
+        text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25)
+
+.card:hover
+    .card-image
+        transform: scale(1.15)
+
+
+@media (max-width: 1100px)
+
+    .card
+        min-height: 450px
+        min-width: 650px
+
+        height: 300px
+        width: 450px
+
+        .card-title 
+            font-size: 36px
+
+
+@media (max-width: 700px)
+    #navigation
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        height: auto
+        min-width: unset
+
+        background-color: #00000097
+
+    #header-menu
+        width: 100%
+        margin: 40px 0 40px
+
+    #menuButton
+        visibility: visible
+
+        border: none
+
+        font-size: 28px
+        color: rgb(215, 215, 215)
+
+        background: none
+
+    #menu
+        gap: 30px
+
+    .menu 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        max-height: 150px
+
+        padding-bottom: 40px
+
+        transition-property: all
+        transition-duration: 1s
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
+
+    .menu.closed 
+        position: fixed
+  
+        max-height: 0px  
+        height: 0px
+        
+        content-visibility: hidden
+
+    .card
+        min-height: 300px
+        min-width: 450px
+
+        height: 300px
+        width: 450px
+
+        .card-title 
+            font-size: 30px
+
+@media (max-width: 550px) 
+    #workSpace 
+        gap: 30px
+    
+    .card 
+
+        min-height: 200px
+        min-width: 350px
+
+        height: 200px
+        width: 350px
+    
+        .card-title 
+            font-size: 22px
