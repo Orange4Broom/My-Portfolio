@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon-suitcase.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/workShow.css">
+    <title>To Do App</title>
+</head>
+<body>
+
+    <section id="sec-1">
+        <nav id="navigation">
+            <div id="header-menu">
+                <header id="nameHeader">Jakub Trnčák</header>
+                <button id="menuButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            
+            <div id="menu" class="menu closed">
+                <a href="../../index.html#sec-1" id="homeButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');">Home</a>
+                <a href="../myWork.html" id="aboutButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');">My work</a>
+                <a href="../../index.html#sec-3" id="socialButton" class="menuButton" onclick="document.querySelector('#menu').classList.toggle('closed');">Social</a>
+            </div>
+        </nav>
+
+        <div id="headerBox">
+            <h2 id="mainPageHeader">Real Time Clock</h2>
+            <a class="links realtime" href="https://github.com/Orange4Broom/Javascript-Real-Time-Clock.git" target="_blank" rel="noreferrer"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+            
+
+        <div id="about-image" class="container">
+            <a href="https://github.com/Orange4Broom/Javascript-Real-Time-Clock.git" target="_blank" rel="noreferrer">
+                <div class="card">
+                    <img src="../../images/realtime.png" alt="code.img" class="card-image">
+                    <h3 class="card-title">Real Time Clock</h3>
+                </div>
+            </a>
+        </div>
+
+    </section>
+    
+</body>
+</html>

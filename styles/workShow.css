@@ -123,14 +123,44 @@ section {
   color: rgb(215, 215, 215);
 }
 
-.links:hover {
+.todoapp:hover {
   scale: 110%;
   transition: 0.4s;
-  color: #24B670;
+  color: #1c975c;
 }
 
-.links:active {
-  color: #13864f;
+.todoapp:active {
+  color: #0f7544;
+}
+
+.calculator:hover {
+  scale: 110%;
+  transition: 0.4s;
+  color: #2a4353;
+}
+
+.calculator:active {
+  color: #152833;
+}
+
+.stopwatch:hover {
+  scale: 110%;
+  transition: 0.4s;
+  color: rgb(163, 83, 33);
+}
+
+.stopwatch:active {
+  color: rgb(129, 66, 26);
+}
+
+.realtime:hover {
+  scale: 110%;
+  transition: 0.4s;
+  color: rgb(145, 41, 47);
+}
+
+.realtime:active {
+  color: rgb(104, 24, 28);
 }
 
 #about-image {
