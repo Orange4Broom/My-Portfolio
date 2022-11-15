@@ -30,7 +30,7 @@ body {
   align-items: center;
   overflow: hidden;
   background-image: url(/images/bubbles.svg);
-  background-size: auto;
+  background-size: cover;
 }
 
 section {
