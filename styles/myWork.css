@@ -28,8 +28,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
   background-image: url(/images/bubbles.svg);
-  background-size: auto;
+  background-size: cover;
 }
 
 section {
